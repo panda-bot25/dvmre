@@ -1,3 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.hamburger {
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: darkblue;  
+  margin: 6px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
 .header{
     background: rgb(126, 207, 234);
     text-align: center;
@@ -117,6 +137,18 @@ h5{
     margin: 0 auto 1rem; 
     text-align: center;
 }
+
+@media (max-width: 768px) {
+  .white-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+   .right {
+    max-width: 100%;
+  }
+}
+
 
 .up{
     width: auto;
