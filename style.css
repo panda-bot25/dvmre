@@ -1,0 +1,174 @@
+.header{
+    background: rgb(126, 207, 234);
+    text-align: center;
+    padding: 1rem;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+h2{
+    width: 22ch;
+    margin-left: 10rem;
+    padding:0;
+}
+
+.img{
+    width:.5px;
+}
+
+.sub{
+    line-height:1.5rem;
+    width: 45ch;
+    margin-left: 10rem;
+}
+
+.sec{
+    background: lightgray;
+}
+
+form{
+    padding: 0 0 0 10rem;
+}
+
+button {
+    background: blue;
+    color:white;
+    margin-left: 2rem;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+}
+.policy{
+    margin-left: 10rem;
+    font-size:x-small;
+}
+
+.vid{
+    padding: 0 0 1rem 15rem;
+    font-size:smaller;
+}
+
+.block{
+    width: 300px;
+    height: 300px;
+    padding: 1rem;
+}
+
+.right{
+    float:right;
+    margin-left: 1rem;
+}
+
+.left{
+    float:left;
+    margin-right: 1rem;
+}
+
+.next{
+    text-transform: uppercase;
+    padding: 1rem 0 0 10rem;
+    font-size: larger;
+    line-height: 0.1;
+}
+
+h3{
+   margin-left: 10rem;
+    font-size: larger;
+}
+
+.t{
+    width: 50ch;
+    margin-left: 10rem;
+    font-size: large;
+}
+
+h5{
+    margin-bottom: 1rem;
+}
+
+.one{
+    width:30ch; 
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    margin-left: 13rem;
+    border-left: 0.5rem solid cyan;   
+}
+
+.action{
+    background: blue;
+    text-align: center;
+    font-size:larger;
+    color:white;
+}
+
+.action h2{
+    width: auto;
+    margin: 0 auto 1rem;
+    text-align: center;
+    color:white;
+}
+
+.action p{
+    width:60ch;
+    margin: 0 auto 1rem; 
+    text-align: center;
+}
+
+.up{
+    width: auto;
+    margin: 0 auto 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.box1{
+    border: 0.25rem solid white;
+    color: black;
+    background: white;
+    border-radius:0.25rem;
+    width: 500px;
+    height:300px;
+    margin-left:20rem;
+    text-align:left
+}
+
+.box2{
+    border: 0.25rem solid white;
+    color: black;
+    background: white;
+    border-radius:0.25rem;
+    width: 500px;
+    height:300px;
+    margin-left:20rem;
+    text-align:right;
+    padding:0;
+}
+
+.box{
+    width:300px;
+    background: lightgray;
+    margin-left:10rem;
+    padding:0 1rem 1rem 0;
+    text-align:center;
+}
+.box button{
+    color:black;
+    background:white;
+    border: 0.1rem solid blue;
+    border-radius: 0.5rem;
+}
+.cards{
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+.last{
+    text-align:center;
+    font-size:large;
+    font-weight:600;
+}
