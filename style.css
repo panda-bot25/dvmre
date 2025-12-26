@@ -2,50 +2,60 @@
     margin:0;
     padding:0;
 }
+*, ::before, ::after {
+    box-sizing: border-box;
+}
 
 .hamburger {
-  width: 30px;
+  width: 90vw;
   cursor: pointer;
+  display: flex;
 }
 
 .hamburger span {
-  display: block;
   height: 3px;
   width: 100%;
-  background: darkblue;  
-  margin: 6px 0;
+  background:rgb(0, 82, 204);
+  margin: 10px 0;
   border-radius: 2px;
   transition: 0.3s;
 }
 
 .header{
-    background: rgb(126, 207, 234);
+    background: rgb(222, 235, 255);
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem;
+    width: 100%;
+    margin-top:0;
 }
 
 body{
     font-family: sans-serif;
+    width: 100%;
 }
 
-h2{
-    width: 22ch;
-    margin-left: 10rem;
-    padding:0;
+h1{
+    width: 30ch;
+    padding:5rem 10rem 0 10rem;
+    margin-block-end: 0.67rem;
+    margin-block-end: 0.67rem;
 }
 
-img{
-    width:100px;
+.sec img{
+    display: block;
+    width:243px;
 }
 
 .sub{
     line-height:1.5rem;
     width: 45ch;
-    margin-left: 10rem;
+    padding: 0 0 0 10rem;
 }
 
 .sec{
-    background: lightgray;
+    width: 211;
+    height:778;
+    background:rgb(244, 245, 247);
 }
 
 form{
@@ -53,7 +63,7 @@ form{
 }
 
 button {
-    background: blue;
+    background: #0065FF;
     color:white;
     margin-left: 2rem;
 }
@@ -65,11 +75,36 @@ button a{
 .policy{
     margin-left: 10rem;
     font-size:x-small;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .vid{
     padding: 0 0 1rem 15rem;
-    font-size:smaller;
+    font-size:0.75rem;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 8rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-video {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-video video {
+  width: 100%;          
+  max-width: 450px;    
+  height: auto;
+  border-radius: 12px;
 }
 
 .block{
@@ -88,22 +123,45 @@ button a{
     margin-right: 1rem;
 }
 
-.next{
-    text-transform: uppercase;
-    padding: 1rem 0 0 10rem;
-    font-size: larger;
-    line-height: 0.1;
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .hero-video video {
+    max-width: 100%;
+  }
 }
 
-h3{
+.next{
+    text-transform: uppercase;
+    font-weight:500;
+    margin-block-end:0.5rem;
+    margin-block-start: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    padding-left: 10rem;
+}
+
+.next p{
+    display:block;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2{
    margin-left: 10rem;
-    font-size: larger;
+    font-size: 1.25rem;
 }
 
 .t{
     width: 50ch;
     margin-left: 10rem;
-    font-size: large;
+    font-size: 1rem;
 }
 
 h5{
@@ -111,15 +169,23 @@ h5{
 }
 
 .one{
+    /* width: 100px;
+    height: 200px;
+    width: 25ch; 
+    border-radius: 1rem;
+    border-left: 0.5rem solid cyan;  
+    position:relative;
+    text-align: left;
+    margin-left: 10rem; */
     width:30ch; 
     margin-bottom: 2rem;
     border-radius: 1rem;
-    margin-left: 13rem;
+    margin-left: 10rem;
     border-left: 0.5rem solid cyan;   
 }
 
 .action-section {
-  background: blue;
+  background: #0065ff;
   padding: 4rem 1.5rem;
   color: white;
 }
@@ -165,12 +231,17 @@ h5{
   max-width: 450px;
 }
 
+.image{
+    width:10rem;
+    transform: translate(-300px, -100px);
+}
+
 .tag {
   display: inline-block;
   font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: blue;
+  color: #091E42;
   margin-bottom: 0.75rem;
 }
 
@@ -223,41 +294,19 @@ h5{
     color: black;
 }
 
-.box1{
-    border: 0.25rem solid white;
-    color: black;
-    background: white;
-    border-radius:0.25rem;
-    width: 500px;
-    height:300px;
-    margin-left:20rem;
-    text-align:left
-}
-
-.box2{
-    border: 0.25rem solid white;
-    color: black;
-    background: white;
-    border-radius:0.25rem;
-    width: 500px;
-    height:300px;
-    margin-left:20rem;
-    text-align:right;
-    padding:0;
-}
-
 .box{
     width:300px;
-    background: lightgray;
+    background: rgb(250, 251, 252);
     margin-left:10rem;
     padding:0 1rem 1rem 0;
     text-align:center;
 }
+
 .box button{
     color:black;
     background:white;
-    border: 0.1rem solid blue;
-    border-radius: 0.5rem;
+    border: 0.1rem solid #0065FF;
+    border-radius: 0.25rem;
 }
 .cards{
     display: flex;
@@ -266,6 +315,5 @@ h5{
 }
 .last{
     text-align:center;
-    font-size:large;
-    font-weight:600;
+    font-size:1.25rem;
 }
